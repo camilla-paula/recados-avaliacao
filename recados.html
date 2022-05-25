@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meus recados</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h3>MEUS RECADOS</h3>
+    <button id="sair" onclick="sairDoSistema()">SAIR</button>
+    <form id="recados">
+      <label for="descricao">Descrição </label>
+      <input
+        type="text"
+        name="descricao"
+        id="descricao"
+        required
+        placeholder="Descrição"
+      />
+      <label for="detalhamento">Detalhamento </label>
+      <input
+        type="text"
+        name="detalhamento"
+        id="detalhamento"
+        required
+        placeholder="Detalhamento"
+      />
+
+      <input type="submit" id="botaoSalvar" value="Salvar"></input>
+      <br />
+    </form>
+    <table id="tabela">
+      <tr>
+        <th>#</th>
+        <th>Descrição</th>
+        <th>Detalhamento</th>
+        <th>Ação</th>
+      </tr>
+      
+    </table>
+    <script src="./recados.js"></script>
+  </body>
+</html>
